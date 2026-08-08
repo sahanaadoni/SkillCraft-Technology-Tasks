@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Fixed Navigation Bar */
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: transparent;
+  transition: all 0.4s ease;
+  z-index: 1000;
+}
+
+/* Navbar Style on Scroll */
+#navbar.scrolled {
+  background-color: #1a1a2e;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  padding: 15px 50px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 8px 16px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+/* Hover Effect for Links */
+.nav-links a:hover {
+  background-color: #e94560;
+  color: #ffffff;
+}
+
+/* Page Sections */
+section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.hero {
+  background: linear-gradient(135deg, #16213e, #0f3460);
+  color: #ffffff;
+}
+
+#about {
+  background-color: #f4f4f9;
+  color: #333333;
+}
+
+#services {
+  background-color: #e2e2e2;
+  color: #333333;
+}
+
+#contact {
+  background-color: #1a1a2e;
+  color: #ffffff;
+}
+
+h1, h2 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 18px;
+}
